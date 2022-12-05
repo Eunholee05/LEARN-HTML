@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체크 박스와 라디오 버튼을 나타내는</title>
+</head>
+<body>
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해  주세요</b></p>
+    <!-- checkbox속성 = 주어진 여러 항목에서 2개 이상 선택할 수 있는 체크 박스를 넣는다. -->
+    <!-- value속성 = 선택한 체크 박스나 라디오 버튼을 서버에게 알려 줄 때 넘겨줄 값을 지정 -->
+    <label><input type="checkbox" value="s_3"> 선물용 3Kg</label>
+    <label><input type="checkbox" value="s_5"> 선물용 5Kg</label>
+    <label><input type="checkbox" value="f_3"> 가정용 3Kg</label>
+    <label><input type="checkbox" value="f_5"> 가정용 5Kg</label>
+    <p><b>선물 포장</b></p>
+    <!-- name속성 = 폼 요소를 제어할 때 사용 -->
+    <!-- radio속성 = 주어진 여러 항목에서 1개만 선택 할 수 있는 라디오 버튼 생성-->
+    <label><input type="radio" name="gift" value="yes">선물 포장</label>
+    <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+  </fieldset>
+</body>
+</html>
